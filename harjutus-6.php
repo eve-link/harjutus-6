@@ -53,19 +53,45 @@
 	?>
 	<br><br>
 
-<?php  
-if (isset($nothing));
-echo "Ei ole deklareritud";
-?>
-<br>
-<?php 
-isset($nothing) == false;
-echo "nothing on deklareeritud";
-?>
-<br>
-<?php 
-!isset($nothing) == true;
-echo "nothing ei ole deklareeritud";
-?>
+	<?php  
+	if (isset($nothing));
+	echo "Ei ole deklareritud";
+	?>
+	<br>
+	<?php 
+	isset($nothing) == false;
+	echo "nothing on deklareeritud";
+	?>
+	<br>
+	<?php 
+	!isset($nothing) == true;
+	echo "nothing ei ole deklareeritud";
+	?>
+	<br><br>
+
+	<h3>Switch</h3>
+
+	<?php 
+	$current_language = ru;
+	switch ($current_language) {  //ei tööta
+		case 'et':
+		echo "Tere! Kuidas sul läheb?";
+		break;
+		echo "<br>";
+		case 'ru':
+		echo "Здравствуйте! Как вы делаете?";
+		break;
+		echo "<br>";
+		case 'fi':
+		echo "Hei! Miten menee??";
+		break;
+		echo "<br>";
+		//default 'en':
+		//echo "Hello! How are you doing?";
+		//break;
+
+	}
+	?>
+
 </body>
 </html> 
