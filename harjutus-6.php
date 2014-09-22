@@ -20,6 +20,22 @@
 		echo "5 on suurem kui 4";
 	}
 	?>
+	<br>
+
+	<?php 
+	$age = 5;
+	$age_limit = 18;
+
+	if ($age < $age_limit) {
+		echo "Kahjuks olete liiga noor. Te peate olema $age_limit aastat vana. Tulge $age_limit - $age aasta pärast tagasi.";
+	} elseif ($age > $age_limit) {
+		echo "Olete piisavalt vana. Tulge edasi!";
+	}
+	elseif ($age = $age_limit) {
+		echo "Olete piisavalt vana. Tulge edasi!";
+	}
+
+	?>
 
 
 </body>
