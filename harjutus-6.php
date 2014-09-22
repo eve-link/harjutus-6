@@ -50,8 +50,22 @@
 	if (($esimene = $teine) || ($kolmas > $neljas)) {
 		echo "Kui väheamlt üks komponentlausetest on tõene, siis käivitatakse see koodiplokk.";
 	}
-
 	?>
+	<br><br>
 
+<?php  
+if (isset($nothing));
+echo "Ei ole deklareritud";
+?>
+<br>
+<?php 
+isset($nothing) == false;
+echo "nothing on deklareeritud";
+?>
+<br>
+<?php 
+!isset($nothing) == true;
+echo "nothing ei ole deklareeritud";
+?>
 </body>
 </html> 
