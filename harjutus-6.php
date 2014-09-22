@@ -20,23 +20,38 @@
 		echo "5 on suurem kui 4";
 	}
 	?>
-	<br>
+	<br><br>
 
 	<?php 
 	$age = 5;
 	$age_limit = 18;
 
 	if ($age < $age_limit) {
-		echo "Kahjuks olete liiga noor. Te peate olema $age_limit aastat vana. Tulge $age_limit - $age aasta pärast tagasi.";
+		echo "Kahjuks olete liiga noor.Te peate olema $age_limit aastat vana. Tulge $age_limit - $age aasta pärast tagasi.";
 	} elseif ($age > $age_limit) {
 		echo "Olete piisavalt vana. Tulge edasi!";
 	}
 	elseif ($age = $age_limit) {
 		echo "Olete piisavalt vana. Tulge edasi!";
 	}
+	?>
+	<br><br>
+
+	<?php 
+	$esimene = 3;
+	$teine = 3;
+	$kolmas = 4;
+	$neljas = 5;
+
+	if (($esimene = $teine) && ($kolmas > $neljas)) {
+		echo "Kui a on väiksem kui b ning b on suurem kui c, siis käivitatakse see koodiplokk.";
+	}
+
+	if (($esimene = $teine) || ($kolmas > $neljas)) {
+		echo "Kui väheamlt üks komponentlausetest on tõene, siis käivitatakse see koodiplokk.";
+	}
 
 	?>
-
 
 </body>
 </html> 
